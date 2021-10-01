@@ -10,7 +10,7 @@ const forecast = (lat, lon, callback ) =>{
             callback(response.body.error.info, undefined)
         } 
         else{
-            callback(undefined, body.current.weather_descriptions[0] + '. The current temperature for ' +body.location.name+ ' is ' +body.current.temperature+ ' degree celsius & also the cloudcover is ' +body.current.cloudcover)
+            callback(undefined, body.current.weather_descriptions[0] + '. The current temperature for ' +body.location.name+ ' is ' +body.current.temperature+ ' degree celsius. The cloudcover is ' +body.current.cloudcover)
         }
     })
 }
